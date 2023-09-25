@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 dotenv.config();
 // Configure as variáveis de ambiente com as informações de conexão ao banco de dados
-const DATABASE_URL='mysql://ndvqrvcvgurboyebszzf:pscale_pw_eLBVP0oxEegsWUs6rpvsRNEJkOKhlE8J8TNevCAV2iU@aws.connect.psdb.cloud/chat-bot?ssl={"rejectUnauthorized":true}'
+const DATABASE_URL='mysql://sv1z91g2fu0f5ae0bdty:pscale_pw_jar0deeYljSJ6xBgVHSTUVQl662P43myZcrEaLX88mG@aws.connect.psdb.cloud/chat-bot?ssl={"rejectUnauthorized":true}'
 // Configuração da conexão com o banco de dados
 const connection = mysql.createConnection(DATABASE_URL);
 
