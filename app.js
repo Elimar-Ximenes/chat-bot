@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 dotenv.config();
 // Configure as variáveis de ambiente com as informações de conexão ao banco de dados
-const DATABASE_URL='mysql://jniu6rru7hjdars3ad40:pscale_pw_j3ZfvcBmGpfCJIlH4UisanXipXrnjCo63Zjjiq1ymep@aws.connect.psdb.cloud/chat-bot?ssl={"rejectUnauthorized":true}'
+const DATABASE_URL='mysql://ndvqrvcvgurboyebszzf:pscale_pw_eLBVP0oxEegsWUs6rpvsRNEJkOKhlE8J8TNevCAV2iU@aws.connect.psdb.cloud/chat-bot?ssl={"rejectUnauthorized":true}'
 // Configuração da conexão com o banco de dados
 const connection = mysql.createConnection(DATABASE_URL);
 
@@ -22,6 +22,10 @@ connection.connect(err => {
     return;
   }
   console.log('Conexão com o banco de dados MySQL estabelecida');
+});
+
+app.get('/', (req, res) => {
+  return res.json("Hello Word");
 });
 
 // Rota POST para cadastrar usuário
